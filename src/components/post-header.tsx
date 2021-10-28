@@ -34,19 +34,20 @@ export const PostHeader = ({ nextPageData }: PostHeaderProps) => {
       {nextPageData
         ? (
         <Link href={`/post/${nextPageData.uid}`} passHref>
-          <Tooltip label={`next page: ${nextPageData.title}`}>
-            <IconButton
-              fontSize="2xl"
-              color="highlight"
-              colorScheme="facebook"
-              bgColor="gray.700"
-              aria-label="next post"
-              boxShadow="base"
-              as="a"
-            >
-              <MdArrowForwardIos />
-            </IconButton>
-          </Tooltip>
+          <Box as='a'>
+            <Tooltip label={`next page: ${nextPageData.title}`}>
+              <IconButton
+                fontSize="2xl"
+                color="highlight"
+                colorScheme="facebook"
+                bgColor="gray.700"
+                aria-label="next post"
+                boxShadow="base"
+              >
+                <MdArrowForwardIos />
+              </IconButton>
+            </Tooltip>
+          </Box>
         </Link>
           )
         : (
