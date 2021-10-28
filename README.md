@@ -8,7 +8,7 @@ A blog is a good example of how to use nextjs features, this simple blog uses Pr
 
 Check the deploy fo the application
 
-[App deploy](blog-with-prismic.vercel.app)
+[App deploy](https://blog-with-prismic.vercel.app)
 
 ## PreView
 
